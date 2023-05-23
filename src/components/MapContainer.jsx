@@ -3,8 +3,8 @@ import { GoogleMap, LoadScript } from "@react-google-maps/api";
 // yarn add @react-google-maps/api
 const MapContainer = () => {
   const containerStyle = {
-    width: "500px",
-    height: "250px",
+    width: "250px",
+    height: "200px",
   };
 
   const center = {
