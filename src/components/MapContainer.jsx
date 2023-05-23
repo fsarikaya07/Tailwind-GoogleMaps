@@ -9,11 +9,12 @@ const MapContainer = () => {
 
   const center = {
     lat: 39.97,
-    lng: 32.80,
+    lng: 32.8,
   };
+  console.log(process.env.REACT_APP_Key);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyD-KpSijiR8dQtnIGe1hEG4FTKnXKqjvBs">
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_Key}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={9}>
         {/* Child components, such as markers, info windows, etc. */}
         <></>
